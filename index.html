@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Divy City</title>
+</head>
+<body>
+   <header >
+    <div class="container">
+        <a href=""><img src="./img/logo div-city.svg" alt=""></a>
+        <div class="local">
+            <img src="./img/locallizaçao.svg" alt="">
+            <p>Cabedelo</p>
+        </div>
+    
+    </div>
+   </header>
+   <section class="home-page">
+    <div class="container">
+        <div class="pesquisar">
+            <p class="pesq">buscar Show</p>
+            <img  src="./img/lupa.svg"  class="uoou" alt="">
+        </div>
+        <div id="slideshow">
+            <img src="./img/festa.jpg" class="slide" alt="slide 1">
+            <img src="./img/bruna 2.jpg" class="slide" alt="slide 2">
+            <img src="./img/karnal 2.jpg" class="slide" alt="slide 3">
+            
+          </div>
+          <div class="banner">
+            <div class="banner-1">
+            <div class="imagem-c">
+                <img src="./img/bruna 3.jpg" alt="">
+            </div>
+            
+            <div class="texto">
+                <div class="titulo">
+                    <h1>25 DE AGOSTO</h1>
+                    <h2>Bruna Louise</h2>
+                    <h3>Cabedelo-pb</h3>
+                    <p>Teatro Paulo Pontes</p>
+                </div>
+            </div>
+          </div>
+          <div class="banner-1">
+            <div class="imagem-b">
+                <img src="./img/karnal 3.jpg" alt="">
+            </div>
+            
+            <div class="texto">
+                <div class="titulo">
+                    <h1>10 DE JANEIRO</h1>
+                    <h2>Leandro Karnal</h2>
+                    <h3>João Pessoa - PB </h3>
+                    <p>Teatro Pedra do Reino</p>
+                </div>
+            </div>
+          </div>
+          <div class="banner-1">
+            <div class="imagem-b">
+                <img src="./img/bruna 3.jpg" alt="">
+            </div>
+            
+            <div class="texto">
+                <div class="titulo">
+                    <h1>25 DE AGOSTO</h1>
+                    <h2>Bruna Louise</h2>
+                    <h3>Cabedelo-pb</h3>
+                    <p>Teatro Paulo Pontes</p>
+                </div>
+            </div>
+          </div>
+          <div class="banner-1">
+            <div class="imagem-b">
+                <img src="./img/karnal 3.jpg" alt="">
+            </div>
+            
+            <div class="texto">
+                <div class="titulo">
+                    <h1>10 DE JANEIRO</h1>
+                    <h2>Leandro Karnal</h2>
+                    <h3>João Pessoa - PB </h3>
+                    <p>Teatro Pedra do Reino</p>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+   
+   </section>
+   <footer>
+    <div class="container">
+        <div class="home">
+            <img src="./img/home.svg" alt="">
+            <p>Home</p>
+        </div>
+        <div class="conta">
+            <img src="./img/minha contasvg.svg" class="pessoa" alt="">
+            <p>Minha Conta</p>
+        </div>
+    </div>
+
+   </footer>
+   <script>
+    let slideIndex = 0;
+
+function showSlides() {
+  const slides = document.querySelectorAll("#slideshow .slide");
+
+  // Oculta todas as imagens
+  for(let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Aumenta o índice do slide
+  slideIndex++;
+
+  // Se estiver no final da lista de slides, volta para o primeiro
+  if(slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  // Mostra o slide atual
+  slides[slideIndex - 1].style.display = "block";
+
+  // Alterna para o próximo slide após 2 segundos
+  setTimeout(showSlides, 3000);
+}
+
+// Inicia a apresentação de slides
+showSlides();
+
+   </script>
+    
+</body>
+</html>
