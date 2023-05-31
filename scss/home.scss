@@ -54,17 +54,9 @@ header {
       &:not(:last-child) {
         margin-bottom: 28px;
       }
-      .imagem-c {
-        &:before {
-          content: "";
-          width: 340px;
-          height: 3px;
-          background-color: #f6d076;
-          position: absolute;
-          bottom: 562px;
-          left: 34px;
-        }
-      }
+      
+       
+     
       .titulo {
         padding-left: 30px;
         h1 {
